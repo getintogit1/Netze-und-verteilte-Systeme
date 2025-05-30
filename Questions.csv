@@ -1,0 +1,161 @@
+Fragenummer,Frage,Themenbereich,Antwort,Rank
+97,Was ist ECN?,IPv4 / Network Layer,ECN = Explicit Congestion Notification→ Signalisiert überlstung ohne Paketverlust,1
+138,Wie funktioniert die Vermeidung von Adresskonflikten bei IPv6?,IPv6,"Durch Duplicate Address Detection (DAD) prüft ein Host vor Nutzung, ob eine Adresse bereits vergeben ist.",1
+30,Was versteht man unter Modulation?,Physical Layer,"Das umwandeln von (digitalen) daten in elektronische/analoge signale, um diese über ein medium zu transportieren. ",3
+72,Skizzieren Sie das 802.3 Rahmenformat.,Data Link Layer,Zieladresse Quelladresse Länge 0xFFFF Daten FCS ,2
+144,Diskutieren Sie den Einsatz von „Happy Eyeballs“.,IPv6,"Happy Eyeballs beschleunigt Dual-Stack-Verbindungen, indem IPv4 und IPv6 parallel getestet und der schnellere genutzt wird.",1
+62,Skizzieren Sie ein ARQ Protokoll auf Sender-/Empfänger-Seite.,Data Link Layer,"Automatic Request protokol: fehlerhafte oder verlorene frames werden wiederhohlt / verbotene Zone: In Arq Protokollen darf die Anzahl gleichzeitiger unbestätigter Frames nciht größer als der Halbe Sequenznummernraum sein , Sonst: verwechslung möglich nach Timeout ",2
+26,Was versteht man unter Rauschen?,Physical Layer,Rauschen = Störungen im Signal (zb. Durch elektrische interferenzen),3
+75,Wie sieht der Ethernet Rahmen aus und was bedeuten die Felder?,Data Link Layer,"Etherhet Rahemformat ( ethernet Frame) : präambel, Start Frame Delimiter, Ziel MAC, Quell MAC, Typfeld (protokol), Nutzdaten, CRC ",2
+128,Nennen Sie 2 Tunneling-Protokolle und ihre Funktionsweise?,IPv4 / Network Layer,"IPsec: Sicher auf IP-Schicht, GRE: Einfache Tunnelung, ohne Verschlüsselung",2
+67,Wozu dienen NAKs?,Data Link Layer,NAK = Negative ACK = Empfänger fordet wiederholung an ,2
+39,Nennen Sie drei Übertragungsmedien und ihre wesentlichen Charakteristika.,Physical Layer,"Kupferfaser = Günstig und Störanfälliger, Lichtwellenleiter(Glasfaser, Fiber To The Home) = teuer, schneller , Funkübertragung (z. B. WLAN, Mobilfunk, Satellit)
+Typ: Drahtloses Medium (elektromagnetische Wellen)
+
+Beispiel: Wi-Fi, LTE/5G, Bluetooth, Satelliteninternet
+
+Eigenschaften:
+
+Flexibilität: Keine physische Verbindung notwendig → mobil einsetzbar",2
+87,Was bedeutet Robustheit eines Routing-Verfahrens?,IPv4 / Network Layer,Ausfallsicherbheit bei defekten Knoten ,2
+106,Was unterscheidet tabellarisch Virtual-Circuit und Datagram Vermittlung.,IPv4 / Network Layer,Antwort zu gros für Tabelle! Antwort im Internet suchen!,1
+143,Beschreiben Sie die Transition zu IPv6 mit NAT64.,IPv6,NAT64 übersetzt IPv6-Anfragen zu IPv4-Servern über eine spezielle Gateway-Adresse und DNS64.,1
+115,Erklären Sie fünf ICMPv4 Kontrollnachrichten/Fehlermeldungen?,IPv4 / Network Layer,0 Echo Reply 3 Destination unreachable 5 Redirect Message 8 Echo Request 11 Time Exceeded  ,
+103,Was unterscheidet Distance Vector von Link-state Routing?,IPv4 / Network Layer,Routing Information Protocol zählt die einzelnen Hops die ein Packet von SRC zu DST braucht und entscheidet unteranderem anhand dessen welches der kürzsete Pfad ist ( max. 15 hops) bei State Link tielt jeder Informationen mit seinem nachbarn bis schlie0lich das gesamte autonome netz mit einer einzelnen Domain die topologie des Netzes kennt und der kürzeste pfad anhand von Graphalgorithmen berechnet werden kann ,3
+78,Was erreicht man mit „bridging“?,Data Link Layer,"verbindet mehrere Lans auf Layer 2, Transparente brücke lernt MAC adressen, Spanning tree protocol (STP) : verhindert Schleifen ",
+16,Skizzieren Sie das OSI-Modell und geben Sie pro Schicht eine/die wesentliche,Allgemein,Physical Layer: Bits senden / Sicherung: Fehlererkennung / Vermittlung: Routing/ Transport: Ende-zu-Ende-Verbindung / Sitzung: Verbindungssteuerung / Darstellung: Datenformatierung/ Anwendung: Dienste für Nutzer,
+93,Mit welchem Verfahren kann man einen Datenstrom auf konstante Rate regeln und wann werden Pakete verworfen?,IPv4 / Network Layer,"Leaky Buckets: Feste rate, überschuss wird verworfen → Paket verlust: Wenn bucket überläuft, WIe ein Eimer mit einem kleinem loch, egal wie viel oder wie wenig wasser in den eimer geschüttet wird aus dem kleinem loch kommt immer die gleiche Menge ",
+95,Erklären Sie das Leaky-Bucket Verfahren.,IPv4 / Network Layer,"Leaky Buckets: Feste rate, überschuss wird verworfen → Paket verlust: Wenn bucket überläuft, WIe ein Eimer mit einem kleinem loch, egal wie viel oder wie wenig wasser in den eimer geschüttet wird aus dem kleinem loch kommt immer die gleiche Menge ",3
+107,Wie funktioniert Fragmentierung (am Beispiel IPv4)?,IPv4 / Network Layer,"Der Prozess der Fragmentierung wird durch mehrere Felder im IP-Header gesteuert. Das Feld ""Identification"" trägt denselben Wert für alle zusammengehörenden Fragmente, um sie zu identifizieren. Das ""Flags""-Feld enthält drei Bits, von denen das zweite Bit das ""Don’t Fragment""-Flag ist, das angibt, ob das Paket nicht fragmentiert werden darf. Das dritte Bit, das ""More Fragments""-Flag, ist gesetzt, außer im letzten Fragment. Das ""Fragment Offset""-Feld gibt an, an welcher Stelle die Daten des Fragments im Originalpaket stehen.",
+37,Was unterscheidet analoger von digitaler Kommunikation?,Physical Layer,"Digitale Kommunikation: mit hilfe eines digitales Mediums: PC, telefon, Email, Internet Analoge Kommunikation: Mit gestik und mimik, tonfall → höhere persönlichere bindung ",
+23,Was besagt die Formel von Nyquist?,Physical Layer,Max Bitrate ohne rauschen,
+110,"Welche IPv4-Adressen sind für Broadcast-, Private- und Link-Local-Adressen reserviert?",IPv4 / Network Layer,"Broadcast: 255.255.255.255 Private: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16 Link-Local: 169.254.0.0/16",1
+81,Wozu dient Redundanz in Leitungsprotokollen?,Data Link Layer,"Fehler erkennen oder sogar korrigieren durch zusätzliche Daten, CRC = Cycling redundancy Check, Parity bits, Checksummen",2
+41,"Was sind die Unterschiede zw FDM, TDM und CDM?",Physical Layer,,1
+94,Mit welchem Verfahren kann man einen Datenstrom auf variable Rate regeln und wann werden Pakete verworfen?,IPv4 / Network Layer,"Token Bucket: Flexibel, erlaubt bursts Paket verlust: Wenn keine token verfügbar, Bucket ist gefüllt mit tokens, kommt neuer request wird ein token entfernt und request wird “genehmigt” sind alle tokens weg wird nach und nach wieder aufgeüllt , sind keine toke da können auch keine Reqests “genehmigt” werden ",
+91,Was ist Broadcast Routing?,IPv4 / Network Layer,Broadcast routing sendet eine nachricht an amme Netzwerk teilnehmer wie bsow. Ein Hub. ,
+48,Charakterisieren Sie fünf Internet-Zugangsarten.,Physical Layer,"DSL	Über Kupferleitung, mittels Telefonnetz, mittlere Bandbreite
+Kabelinternet	Über TV-Koaxialkabel, oft höhere Geschwindigkeit als DSL
+Glasfaser (FTTH/FTTC)	Sehr hohe Geschwindigkeit, geringe Latenz, teuer in Ausbau
+LTE/5G (Mobilfunk)	Drahtlos, flexibel, aber Bandbreite schwankend
+Satelliteninternet	Weltweit verfügbar, hohe Latenz, wetterabhängig",
+22,Was versteht man unter „Internet of Things“?,Physical Layer,"oT, geräte die über netzwerk Protokolle mit anderen Entitäten kommunizieren können. ",
+114,Welches IPv4 Protokoll sendet welche,IPv4 / Network Layer,ICMP ist Teil von IP → Senden von Fehlermeldungen & Diagnosedaten. Internet Control Message Protocol ,3
+7,Was ist ein Hohlleiter?,Allgemein,"Metallröhre zur Hochfrequenzübertragung, vor allem für Mikrowellen.",
+20,Erklären Sie die wichtigsten Aufgaben/Funktionen der Bitübertragungsschicht?,Physical Layer,"Bitübertragungsschicht = Physical Layer: Modularisierung von Bits in Analoge wellenformen und übertragen von dieser über physchische medien wie kupfer, glasfaser, Funk",
+38,Worin unterscheiden sich tabellarisch Leitungs- und Paketvermittlung?,Physical Layer,Antwort zu gros für Tabelle! Antwort im Internet suchen!,
+11,Was sind asynchrone Übertragungsarten und in welcher Hinsicht sind sie das?,Allgemein,"Sender/Empfänger arbeiten ohne gemeinsamen Takt, Daten mit Start-/Stoppbits.",2
+111,Welche IPv4 Netzklassen gibt es?,IPv4 / Network Layer,"A, B, C,  sind fpr normale netz anwendunge D und E D & E sind für multicast reserviert",1
+53,Wofür steht CSMA/CD? Skizzieren Sie die Funktionsweise von CSMA/CD.,Data Link Layer,CSMA/CD (Carrier Sense Multiple Access with Collision Detection)  -Genutzt in Ethernet (veraltet). -Station  „hört“ vor dem Senden (Carrier Sense). -Kollisionen werden erkannt (Collision Detection) → dann Backoff-Zeit.  -Funktioniert nur bei Halbduplex und gemeinsamem Medium (z.B. Bus). ,
+129,Wie funktioniert ein VPN?,IPv4 / Network Layer,Verschlüsselung + Tunneling,3
+139,Erklären Sie die Aufgaben von ICMPv6.,IPv6,"ICMPv6 übernimmt Fehlerberichte, NDP-Nachrichten und Unterstützungsfunktionen für IPv6-Betrieb.",
+102,Nach welchen Kriterien/Metriken kann ein kürzester Pfad in einem Netzwerk berechnet werden?,IPv4 / Network Layer,"entweder nach RIP, es werden die Hops gezählt und mit hilfe dieser unr Routing Tables wird der kürzeste Pfad Berechnet, dies ist Distance Vector und die maximale anzah an Hops hierbei beträgt nur 15. Eine andere methode ist OSP bei dem router ihre infomrationen an ihre dirketen nachbarn schicken und diese wiederum an ihre → Das Ganze netzwer kennt topologie un dberechent erneut auf Graphalgorithmen den kürzesten weg mit den wenigsten hops. ",2
+92,Was unterscheidet transparente und nicht-transparente Fragmentierung,IPv4 / Network Layer,"Transparente Fragemntierung: Der Empfänger krigt nichts mit bei der fRagmentierung , bspws, IPv4 Nicht Transparente Fragmentierung: Empfänger seite erfährt das fragmentiert wurde IPv6",3
+52,Welche Methoden zur Kollisionsvermeidung gibt es?,Data Link Layer,"CSMA/CD , Slotted ALOHA ",1
+80,Wie kann ein Protokoll Fehlerfreiheit ohne Wiederholungen erreichen?,Data Link Layer,"Durch FEC: Sender sorgt fügt redundanz hinzu → empfänger kann fehler selbstständig korrigieren oder ARQ: fehler werden erkannt → Datem erneut angefordert, Höhere Latenz geringere Redundanz ",
+56,Was ist eine Bus-Topologie?,Data Link Layer,Alle Geräte teilen sich eine Leitung. Nur eine Station kann zurzeit senden. Kollisionen möglich → CSMA/CD erforderlich.,2
+88,Was bedeutet Stabilität eines Routing-Verfahrens?,IPv4 / Network Layer,Netzwerk erreicht nach Änderungen wieder Konstante Zustand. ,3
+35,Was sind die Unterschiede zwischen Kupfer und Glasfaserkabel?,Physical Layer,"Kupferfaser = Günstig und Störanfälliger, Glasfaser = teuer, schneller ",3
+140,Diskutieren Sie den Einsatz von NAT6?,IPv6,"NAT6 ist umstritten, da IPv6 eigentlich ausreichend Adressen bietet und End-to-End-Verbindungen ermöglichen soll.",
+43,"Wo lassen sich Infrarot, Mikrowellen und UV-Strahlung auf dem Frequenzband einordnen?",Physical Layer,"UV 100 Nanometer, Infrarot, 700 Nanometer, Mikrowellen 300 MHz und 300Ghz ",
+76,Warum müssen MAC Adressen eindeutig sein? Wie erreicht man das?,Data Link Layer,"Notwendign für eindeutige Identifikation im lokalen netzwerk, ersten 24bytes können öfter vorkommen ( vendor ID) zweiten 24bytes → unique ",
+119,"Wie sehen die ARP-Nachrichten aus, damit Rechner A mit IPv4 Adresse IPA",IPv4 / Network Layer,Antwort zu gros für Tabelle! Antwort im Internet suchen!,2
+134,Charakterisieren Sie IPv6?,IPv6,"IPv6 bietet 128-Bit-Adressen, integrierten IPsec-Support, vereinfachte Headerstruktur und bessere Autokonfiguration.",
+60,Was sollte bei einem Protokoll des Data Link Layer vereinbart werden?,Data Link Layer,Rahmenformat / Adressierung (z.B. MAC-Adressen) / Fehlererkennung/-korrektur/ Zugriffsverfahren (MAC) / Flusskontrolle / Synchronisation,
+12,Was unterscheidet synchrone von asynchroner Übertragung?,Allgemein,"Synchron: gemeinsamer Takt, kontinuierlicher Datenstrom; asynchron: kein Takt, einzelne Zeichen.",3
+142,Was ist IPv4/IPv6 Translation und was ist dabei zu beachten?,IPv6,"Erfordert Protokollübersetzer wie NAT64 oder ALG, da IPv4- und IPv6-Pakete nicht direkt kompatibel sind.",
+47,Über welche „Leitungen“ bieten Internetprovider Zugänge an?,Physical Layer,"Kupferkabel(DSL), Koaxialkabel(TV), Glasfaserleitungen, Mobilfunknetze(5G), Satellitenverbindungen ",
+86,Welche Kriterien sollen Routing-Verfahren erfüllen?,IPv4 / Network Layer,"Robust, Stabil, Kürzesten Pfad finden ",2
+118,Welche Betriebsmodi bietet DHCPv4 und wofür werden sie verwendet?,IPv4 / Network Layer,,
+24,Was besagt die Formel von Shannon?,Physical Layer,"Max Bitrate mit Rauschen gibt den mittleren Informationsgehalt einer Nachricht an. Sie wird verwendet, um die Unordnung oder das Maß der Ungewissheit in einer Nachricht zu quantifizieren",1
+29,Was ist Rauschen/Fehler/Signal?,Physical Layer,"Signal = Physikalisches Träger signal das Daten transportiert( Spannung, Licht, Funksignal)  Fehler = Bitfehler durch schlechte SIgnal QUalität oder rauschen ",
+31,Skizzieren Sie kurz drei Modulationsverfahren?,Physical Layer,"FSK = Frequency Key Shifting, Amplitude Key Shifting, Phase Key Switching ",
+25,Was kennzeichnet analoge im Gegensatz zu digitalen Signalen?,Physical Layer,"Analoge Signale sind Continuos ( wellenform) Digitale Signale sind diskret (0,1)",3
+130,"Warum findet IPv4 noch Verwendung, obwohl es IPv6 schon länger gibt?",IPv4 / Network Layer,"IPv4 Funktioniert mit NAT, Rollout teuer, Legacy Hardware ",
+73,Worin unterscheidet sich das 802.3 und das Ethernet-Rahmenformat?,Data Link Layer,"Ethernet = Zieladresse Quelladresse Typ Daten FCS, 802.3 = Zieladresse Quelladresse Länge 0xFFFF Daten FCS",
+2,Was ist der Unterschied zwischen Deep Web und Dark Web?,Allgemein,"DeepWeb = Alle Inhalte im Internet, die nicht von Suchmaschinen indexiert sind. Dazu gehören 
+– Intranets von Unternehmen
+– Passwortgeschützte Seiten (z. B. Online-Banking)
+
+Dark Web = Teilmenge des Deep Webs, die nur über spezielle Software wie Tor (The Onion Router) zugänglich ist. Wird anonym betrieben. Inhalte dort sind oft versteckt und nicht legal",
+19,"Was unterscheidet Hub, Switch, Router?",Physical Layer,"Hub: Sendet Daten an alle Ports (Broadcast). Switch: Sendet gezielt an Zielgerät über MAC-Table  Router: Verbindet Netzwerke, leitet Daten per IP-Adresse weiter ",3
+127,Was sind die Unterschiede zw Leitungs-/Nachrichten- und Paketvermittlung?,IPv4 / Network Layer,Antwort zu gros für Tabelle! Antwort im Internet suchen!,
+6,Was bedeutet die Einführung von DoH?,Allgemein,"DoH (DNS over HTTPS) verschlüsselt DNS-Anfragen über HTTPS, um Tracking und Manipulation durch Dritte zu verhindern.",
+68,Was bedeutet bei Sequenznummern „verbotene Zone“?,Data Link Layer,"In ARQ-Protokollen darf die Anzahl gleichzeitiger unbestätigter Frames nicht größer als der halbe Sequenznummernraum sein (z.B. bei Modulo-N = 8 → max. 4 Frames). , SOnnst: verwechslung möglich nach timeout ",
+132,Skizzieren und erklären sie Tunneling Mechanismen für IPv6/IPv4.,IPv6,"IPv6-Pakete werden in IPv4-Pakete eingebettet (z. B. 6to4, Teredo), um IPv6 über IPv4-Netze zu transportieren.",
+131,Was charakterisiert das „Tactile Internet“? Geben Sie Anwendungsbeispiele,IPv4 / Network Layer,"Tactile Internet, hohe verfügbarkeit und niedrigte latenz-→ z.b bei Uatonomen Fahrzeugen ",3
+9,9. Welche Unterscheidungskriterien gibt es für Netze?,Allgemein,"Größe (Local AN/Wide AN), Topologie, Zugriffsverfahren, Übertragungsart.",
+61,Skizzieren Sie ein Stop/Wait Protokoll auf Sender-/Empfänger-Seite.,Data Link Layer,"sebder wartet nach jeden Frame auf ACK, Einfach aber ineffizient bei langer RTT",
+55,Was versteht man unter statischer bzw. dynamischer Kanalzuordnung?,Data Link Layer,"Statisch: Jeder Nutzer erhält festen Kanal/Zeitschlitz → ineffizient bei geringer Auslastung. Dynamisch: Kanäle nach Bedarf zugewiesen → effizienter. Bsp.: ALOHA, CSMA",
+136,Wie funktioniert die IPv6 Autokonfiguration?,IPv6,"Ein Gerät generiert seine Adresse automatisch per SLAAC, ggf. ergänzt durch DHCPv6 für zusätzliche Infos.",
+63,Nennen Sie wenigstens fünf Kanalzugriffsverfahren?,Data Link Layer,"ALOHA : Einfach, hohe kollision effizienz: 18%  , Slotted ALOHA: zeitfenster → effizienc 36%, CSMA: Sense before transmit, CSMA/CD Mit Kollisionserkennung, Token Passing: Token regelt zugriffsrecht",3
+121,Adresse IPB herausfindet? Skizzieren Sie den Aufbau eines ARP-Requests,IPv4 / Network Layer,,
+70,Erklären Sie ALOHA. Was ist slotted ALOHA und warum wurde es entwickelt?,Data Link Layer,"Aloha:  1. Transmit the frame,  if ACK received: Done  else: wait a random time and go to step 1 → maximum throughput 18&   Slotted ALOHA: Divide Time into time slots Transmission can only start at the beginninf of a slot → maximum throughput 36%",
+13,Welche Entwurfsaspekte sind für Netzwerke entscheidend?,Allgemein,"Skalierbarkeit, Sicherheit, Zuverlässigkeit, Performance, Kosten.",
+58,Welche Aufgaben hat die Leitungsschicht?,Data Link Layer,"Leitungsschicht (Physical Layer): Überträgt rohe Bits über ein physisches Medium (Kabel, Funk etc.).",
+141,Erklären Sie die Herausforderungen beim Umstieg auf IPv6.,IPv6,"Kompatibilität, Kosten, Umrüstung von Geräten und Software sowie gleichzeitiger Betrieb mit IPv4 (Dual Stack)",2
+17,Was ist DCF-77,Physical Layer,"Funkuhrsignal auf 77,5 kHz es überträgt beinahe 99% des Jahrs und andere können Atomuhr nach diesem SIgnal stellen ",
+18,"Definieren Sie die Begriffe Schnittstelle, Signal, Laufzeit?",Physical Layer,"Schnittstelle: Verbindungspunkt zwischen zwei Schichten oder Geräten.
+Signal: Physikalische Darstellung von Daten (z. B. elektrische Spannung).
+Laufzeit: Zeit, die ein Signal von Sender zu Empfänger braucht",
+112,Was ist eine Subnetzmaske?,IPv4 / Network Layer,Teilt IP in Netz- und Hostanteil,
+79,Was ist Flusskontrolle und wie kann Flow Control gemacht werden?,Data Link Layer,"verhindert überlastung des Empfängers, durch Stop-Wait, Sliding Window, ",2
+33,Skizzieren Sie drei Multiplexing-Verfahren.,Physical Layer,,1
+4,"Was kann man tun, um Anonymität im Internet zu erreichen?",Allgemein,"Tor-Browser, VPNs, keine persönlichen Daten teilen, Cookies blockieren, Suchmaschinen wie DuckDuckGo nutzen, LISP benutzen, Digitalfingerprint nicht eng halten ",
+65,Wozu dienen Duplicate ACKs?,Data Link Layer,"ACK (Acknowledgement) sender bestätigt Erhalt, Duplicate ACKS: Mehrere gleiche ACKS ignalisieren evtl verlust",
+54,Nennen Sie wenigstens fünf 802.X Standards und ihren Einsatzbereich?,Data Link Layer," 802.3 Ethernt 802.11 WLAN (WiFi) 802.15 Bluetooth, WPAN 802.1D Bridging, Spanning Tree Protocol 802.1Q VLAN-Tagging",
+137,"Beschreiben Sie die fünf Nachrichten, mit denen IPv6 autokonfiguriert wird.",IPv6,"Router Solicitation, Router Advertisement, Neighbor Solicitation, Neighbor Advertisement, Redirect.",
+108,Wie und warum funktioniert Multicast-Routing anders als Unicast-Routing?,IPv4 / Network Layer,Multicast 1:n Unicast 1:1,
+109,Skizzieren Sie den IPv4 Header und erklären Sie die Felder?,IPv4 / Network Layer,,
+120,und MAC Adresse MACA die MAC Adresse MACB von Rechner B mit IPv4,IPv4 / Network Layer,IDK,1
+123,Welche Nachrichten nutzt OSPF wofür?,IPv4 / Network Layer,"OSPF nutze 1. Hello Mesage umzuerfahren wer der nächste Nachbar ist, 2. LSA: Link-State Announce 3. DBD: Datenbankabgleich 4. LSR: LSA anfordern 5. LSU: LSA senden.",
+124,Wie funktioniert reverse-path forwarding?,IPv4 / Network Layer,"Reverse Path Forwarding: Sicherung gegen Schleifen bei Multicast. When a multicast packet enters a router's interface, the router checks if the incoming interface matches the best reverse path for the source IP address. If the check passes, the packet is forwarded to other interfaces participating in the multicast group; if it fails, the packet is dropped.",
+34,Was versteht man unter Signalisierung?,Physical Layer,Übermittlung von Steuerinformationen über das Übertragungsmedium,1
+83,Was ist ein RFC?,IPv4 / Network Layer,"Request for Comments, feedback einholen der IETF um standars im Interbet zu etablieren ",
+66,Wozu dienen Cumulative ACKs?,Data Link Layer,Cumulative ACKS: bestätigen alle Frames bis zu einer Sequenznummer,2
+51,Wie können Satelliten für Internet-Dienste verwendet werden?,Physical Layer,"Satelliten werden für Internet-Dienste genutzt, indem sie Daten per Funk( drahtlos mit elektromagnetischen Wellen übertragen werden – typischerweise im Radiofrequenz- oder Mikrowellenbereich. Dabei werden Informationen auf ein Trägersignal moduliert und über die Luft oder den freien Raum gesendet) zwischen Bodenstationen und Nutzeranlagen (z. B. Satellitenschüsseln) übertragen. Sie ermöglichen weltweiten Zugang, insbesondere in abgelegenen oder schlecht erschlossenen Regionen.",
+105,Was ist und wie kann man Jitter beeinflussen?,IPv4 / Network Layer,"Jitter ist eine Abweichung oder Verzögerung bei der Zustellung von Datenpaketen über ein Netzwerk, also eine Verzögerung zwischen der Übertragung und dem Empfang eines Signals.",3
+116,Wie funktioniert NAT anhand eines Beispiels?,IPv4 / Network Layer,,1
+99,Welche Ansätze für Congestion Control kennen Sie?,IPv4 / Network Layer,"ECN = Explicit Congestion Notification→ Signalisiert überlstung ohne Paketverlust  RED = Random Early Detection: Frühzeitiges verwerfen zur Stauvermeidung  Congestion Control ist ein Verfahren zur Vermeidung und Auflösung von Staus in Computernetzwerken, um Netzwerkkomponenten vor Überlastung zu schützen. TCP verwendet ein fenster, und einen schwellenwert um die Datenübertragungsrate anzupassen und Netzwerkausfälle zu minimieren",
+85,Was sind die wichtigsten Aufgaben der Netzwerkschicht?,IPv4 / Network Layer,"Routing von Paketen, Fragmentierung, Addressierung",2
+71,Welche Rahmenerkennungsverfahren kennen Sie? Erklären Sie ein Verfahren.,Data Link Layer,"Bit Stuffling, Byte Stuffling, Längenfeld, Flag Felder mit Escape Zeichen, prüfsumme/CRC zur Fehlererkennung ",1
+89,Was unterscheidet einen Host von einem Router?,IPv4 / Network Layer,A host is a device that is the ultimate consumer of communication services.  A router is a device that forwards data packets between different networks. It has multiple network interfaces and can be connected to multiple networks.,3
+82,Wann ist FEC besser als ARQ?,Data Link Layer,"FEC (Forward Error Correction) ist besser als ACK/ARQ (Automatic Repeat reQuest) in Situationen, wo Wiederholungen ineffizient oder unmöglich sind. FEC bei Funk und Fernsehen, ARQ bei TCP und LAN.",
+46,Charakterisieren Sie xDSL.,Physical Layer,Datenübertragung über Telefonkabel (Kupfer),
+21,Welche Gremien standardisieren Netzwerke?,Physical Layer,"ISO, IEEE, ETSI",3
+57,Was bezeichnet der Begriff Byte-Stuffing und welchen Zweck hat das Verfahren?,Data Link Layer,"Spezielle Steuerzeichen im Datenstrom (z.B. FLAG) werden bei Bedarf „gestuffed“ (z.B. durch Escape-Zeichen), um Rahmen korrekt zu erkennen.",
+125,"Was ist IP-Multicast? Welches Protokoll wird im LAN verwendet, welche im WAN?",IPv4 / Network Layer,"IP-Multicast ist eine Technik, die es ermöglicht, Datenpakete gleichzeitig an mehrere Empfänger zu senden. IGMP: Verwaltet den Beitritt von Hosts zu Multicast-Gruppen im LAN. PIM-Sparse-Mode: Wird im WAN verwendet, um Multicast-Datenverkehr effizient zu verteilen ",1
+36,Was ist Vectoring?,Physical Layer,Technik zur rauschunterdrückung bei DSL,
+135,Wie funktioniert NDP?,IPv6,"Das Neighbor Discovery Protocol ersetzt ARP und verwaltet Adressauflösung, Router-Erkennung und Erreichbarkeitsprüfung.",
+1,Was halten Sie für die beunruhigendste Entwicklung im Internet?,Allgemein,Fake News / Meinungsfreiheit / Eingriff von Akteuren in Politische Angelegenheiten durch Social Media Kampagnen --> Manipulation des Volkes ,
+8,Was sind Ziele von Rechnernetzen?,Allgemein,"Ressourcenteilung, Kommunikation, Datenzugriff, Zuverlässigkeit, Kosteneffizienz.",
+100,Was versteht man unter „over-provisioning“?,IPv4 / Network Layer,,
+77,Wie ist die MAC-Adresse aufgebaut?,Data Link Layer,"48 byets → ersten 24 bytes = Organization Unique Identifier OUI , zweiten 24 bytes geräte erkennung ",3
+113,"Was ist CIDR, welche Vorteile bringt es und wie verwendet man es?",IPv4 / Network Layer,Classless Inter-Domain Routing → Flexible Netzmaske enthält neueingführte Suffixe ../24 .../28 die die gesetzten bits in der Bitmaske repräsentieren --> Kompakter ald DDN ,
+5,Welche Verordnung sorgt für den Schutz personenbezogener Daten?,Allgemein,"Datenschutzgrundverordnung, Eine europäische Verordnung die in allen Mitgliedsstaaten unmittelbar anzuwenden ist. ",
+27,"Welche Modulationen verwenden FSK, ASK, PSK?",Physical Layer,,
+122,An welches Routing-Protokoll ist BGP angelehnt und wie funktioniert es?,IPv4 / Network Layer,Angelehnt an Distance-Vector.,
+104,Was versteht man unter hierarchischem Routing?,IPv4 / Network Layer,"Every host in the network must have a unique address that determines where it is. This address is normally assigned from a hierarchical system. For example, you can be: ""Fred Murphy"" to people in your house, ""Fred Murphy, 1 Main Street"" to Dubliners, ""Fred Murphy, 1 Main Street, Dublin"" to people in Ireland, ""Fred Murphy, 1 Main Street, Dublin, Ireland"" to people anywhere in the world.",1
+50,Was ist Free Space Optics?,Physical Layer,Datenübertragung per Laser durch die Luft (z. ,
+98,Was ist RED?,IPv4 / Network Layer,RED = Random Early Detection: Frühzeitiges verwerfen zur Stauvermeidung ,2
+69,Skizzieren Sie den PPP Header,Data Link Layer,Point To Point Header: Flag / Address / control/Protocol/Payload/FCS,
+44,Was ist SLIP?,Physical Layer,Frühes Protokoll zur IP-Übertragung über serielle Schnittstellen,
+49,Auf welchen Frequenzbändern senden welche meistgenutzten 802.11 Standards?,Physical Layer,2.4 Ghz ooder 5Ghz ,1
+45,Welche Leistungsmerkmale hat ISDN?,Physical Layer,Digitale Telefonleitung mit Basis- und Primärmultiplexanschluss,2
+28,Was ist Baud?,Physical Layer,"Baud != Bitrate !  Baud rate, also known as the symbol rate, is the number of signal changes or symbols transmitted per second. It measures the number of times the state of a signal changes and is used to determine the bandwidth required for the transmission of the signal.",
+96,Erklären Sie das Token-Bucket Verfahren.,IPv4 / Network Layer,"Token Bucket: Flexibel, erlaubt bursts Paket verlust: Wenn keine token verfügbar, Bucket ist gefüllt mit tokens, kommt neuer request wird ein token entfernt und request wird “genehmigt” sind alle tokens weg wird nach und nach wieder aufgeüllt , sind keine toke da können auch keine Reqests “genehmigt” werden ",
+117,Skizzieren Sie die Funktionsweise von DHCPv4 anhand der Nachrichten.,IPv4 / Network Layer,,
+133,Skizzieren Sie den IPv6 Header und erklären Sie die Bedeutung der Felder.,IPv6,"Der IPv6-Header enthält u. a. Version, Traffic Class, Flow Label, Payload Length, Next Header, Hop Limit, Source und Destination Address.",
+74,Charakterisieren Sie den IEEE 802.15 Standard.,Data Link Layer,"WPAN: Wireless Personal Area Networks, Kurzstreckenkommunikation, Niedriger Energieverbauch, 2.4GHz (Bluetooth, ZigBee)",3
+40,Was ist das SONET?,Physical Layer,Glasfaserstandard für Hochgeschwindigkeitsnetze (v. a. in USA),
+59,Welche Aufgaben hat die Sicherungsschicht?,Data Link Layer,Sicherungsschicht (Data Link Layer): Stellt fehlerfreie Übertragung von Frames zwischen zwei direkt verbundenen Geräten sicher. Aufgaben: Rahmenbildung (Framing) / Fehlererkennung und ggf. -korrektu / Flusskontrolle (Flow Control) / Medienzugriffskontrolle (MAC),2
+14,"Skizzieren Sie den Zusammenhang zwischen Schicht, Schnittstelle, Dienst und Protokoll",Allgemein,"Schicht bietet Dienst über Schnittstelle an, Protokoll regelt Kommunikation mit gleicher Schicht.",
+42,"Skizzieren Sie die Funktionsweise von TDM, FDM und WDM.",Physical Layer,,3
+101,Was kennzeichnet ein Open Loop Verfahren.,IPv4 / Network Layer,,1
+84,Wie „entstehen“ Internet Standards?,IPv4 / Network Layer,"Problem identifizieren, Lösung als RFC einreichen, Diskussion & Verbesserung, Standardisierung durch IETF.",
+3,Wo ist Privacy by design/default festgelegt und was bedeutet es?,Allgemein,Privacy by Design/Default ist in Art. 25 DSGVO geregelt; Datenschutz muss von Anfang an integriert und standardmäßig voreingestellt sein.,3
+10,Was sind dynamische Netzzugänge und in welcher Hinsicht sind sie das?,Allgemein,"IP-Adressen werden temporär per DHCP vergeben, nicht fest.",
+32,Was versteht man unter Multiplexing?,Physical Layer,Mehrere Signale auf einem Medium ,
+64,Wozu dient ein Schiebefenster und wie kann man die erforderliche Schiebefenstergröße berechnen?,Data Link Layer,"Sender darf mehrere frames ohne ACK senden, Erhöht effizient / Fenstergröße≥Bandbreite×Round Trip Time (RTT)/Framegröße",1
+90,Welche Vorteile/Nachteile hat Flooding von Routing-Informationen?,IPv4 / Network Layer,"Senden an alle Nachbarn. + Robust, - Ineffizient  ",
+15,Beschreiben Sie die grundlegenden Dienstprimitiven.,Allgemein,"Request, Indication, Response, Confirm – steuern Dienstaufrufe.",
