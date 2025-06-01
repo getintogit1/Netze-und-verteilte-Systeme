@@ -1,6 +1,6 @@
 # Netzwerk-Lernquiz für "Netze und Verteilte Systeme" 🧠🌐
 
-Dieses Python-Tool bietet ein interaktives Lernquiz zur Vorbereitung auf die Klausur im Modul **Netze und Verteilte Systeme**. Es hilft Studierenden, Fragen aus verschiedenen Themenbereichen zu beantworten, den Schwierigkeitsgrad einzuschätzen und gezielt zu wiederholen.
+Dieses Python-Tool bietet ein interaktives Lernquiz zur Vorbereitung auf die Klausur im Modul **Netze und Verteilte Systeme**. Es hilft Studierenden, Fragen aus verschiedenen Themenbereichen des OSI-Modells zu beantworten, den Schwierigkeitsgrad einzuschätzen und gezielt zu wiederholen.
 
 ---
 
