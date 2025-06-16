@@ -41,4 +41,4 @@ Das Skript lädt eine CSV-Datei mit Fragen, Kategorien und Antworten und bietet 
 ## ▶️ Nutzung
 
 ```bash
-python quiz.py
+python main.py
